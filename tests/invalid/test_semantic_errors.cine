@@ -1,0 +1,25 @@
+// =============================================
+// Teste: Erros Semânticos
+// Este arquivo deve gerar erros na análise semântica
+// =============================================
+
+// Variável não declarada
+x = 10;
+
+// Variável duplicada no mesmo escopo
+int a = 5;
+int a = 10;
+
+// Tipo incompatível: atribuir string a int
+int numero = "texto";
+
+// Operação inválida: subtrair string
+string nome = "teste";
+string resultado = nome - "abc";
+
+// Uso de variável não declarada em expressão
+int b = c + 10;
+
+// Negação de string
+string s = "oi";
+int neg = -s;

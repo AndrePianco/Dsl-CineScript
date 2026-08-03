@@ -1,0 +1,14 @@
+// =============================================
+// Teste: Comandos de Domínio (placeholder)
+// TODO: Substituir pelos comandos reais do tema escolhido
+// =============================================
+
+// Exemplo genérico de uso dos comandos de domínio
+// Descomente e adapte quando o tema for definido:
+
+// domainCmd1("argumento1");
+// domainCmd2("argumento1", 42);
+
+// Por enquanto, teste com print como substituto
+string mensagem = "Comandos de domínio serão implementados aqui";
+print(mensagem);

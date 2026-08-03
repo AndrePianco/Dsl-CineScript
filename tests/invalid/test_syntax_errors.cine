@@ -1,0 +1,22 @@
+// =============================================
+// Teste: Erros Sintáticos
+// Este arquivo deve gerar erros na análise sintática
+// =============================================
+
+// Falta ponto e vírgula
+int x = 10
+
+// Falta parêntese de fechamento no if
+if (x > 5 {
+    print(x);
+}
+
+// Falta chave de fechamento
+while (x < 20) {
+    x = x + 1;
+
+// Expressão inválida
+int y = ;
+
+// Falta parêntese no print
+print x;
