@@ -1,9 +1,4 @@
-/**
- * CineScript — DSL para Roteiros de Cinema e Serie
- *
- * Gramatica combinada ANTLR4 (Lexer + Parser)
- * Suporta: metadados, personagens, cenas, acoes e dialogos.
- */
+
 grammar CineScript;
 
 // =========================================================
