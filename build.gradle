@@ -1,0 +1,55 @@
+plugins {
+    id 'java'
+    id 'antlr'
+    id 'application'
+}
+
+group = 'com.cinescript'
+version = '1.0.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    antlr 'org.antlr:antlr4:4.13.2'
+    implementation 'org.antlr:antlr4-runtime:4.13.2'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java', "${buildDir}/generated-src/antlr/main"]
+        }
+        antlr {
+            srcDirs = ['src/antlr4']
+        }
+    }
+}
+
+generateGrammarSource {
+    arguments += ['-visitor', '-no-listener', '-package', 'cinescript.generated']
+    outputDirectory = file("${buildDir}/generated-src/antlr/main/cinescript/generated")
+}
+
+compileJava.dependsOn generateGrammarSource
+
+application {
+    mainClass = 'cinescript.Main'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'cinescript.Main'
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    archiveBaseName = 'cinescript'
+}

@@ -1,0 +1,65 @@
+// ============================================
+// CineScript - Exemplo de Roteiro
+// Breaking Bad - Cena de Abertura (adaptacao)
+// ============================================
+
+title: "Breaking Bad - Pilot"
+author: "Vince Gilligan"
+date: "2007-01-20"
+draft: "First Draft"
+
+// Declaracao de personagens
+character Walter as "Walter White"
+character Jesse as "Jesse Pinkman"
+character Skyler as "Skyler White"
+
+// ---- CENA 1 ----
+
+scene "White Residence - Kitchen" interior day {
+
+    action: "Walter White, 50 anos, sentado a mesa do cafe da manha. Ovos e bacon no prato, intocados."
+
+    Skyler: "Bom dia, Walt. Seu cafe vai esfriar."
+
+    Walter: "Eu preciso te contar uma coisa."
+
+    Walter ("hesitante"): "Algo que eu descobri na semana passada."
+
+    Skyler: "O que foi? Voce esta me assustando."
+
+    action: "Walter levanta da cadeira lentamente. Suas maos tremem."
+
+    Walter ("em voz baixa"): "Eu fui diagnosticado com cancer de pulmao. Inoperavel."
+
+    action: "Silencio absoluto. Skyler congela."
+}
+
+// ---- CENA 2 ----
+
+scene "High School - Chemistry Lab" interior day {
+
+    action: "Walter diante de uma lousa repleta de formulas quimicas. Uma classe de adolescentes entediados."
+
+    Walter: "Quimica e, bem, tecnicamente, o estudo da materia. Mas eu prefiro ve-la como o estudo da mudanca."
+
+    action: "Walter caminha entre as fileiras de carteiras."
+
+    Walter: "E crescimento, depois decadencia, depois transformacao."
+
+    Walter ("para si mesmo"): "Esta mudando bem debaixo dos nossos olhos."
+}
+
+// ---- CENA 3 ----
+
+scene "Desert - Open Road" exterior dawn {
+
+    action: "Um trailer RV dispara por uma estrada deserta no deserto do Novo Mexico."
+
+    action: "Walter dirige o RV usando apenas cueca e uma mascara de gas pendurada no pescoco. Jesse esta no banco do passageiro, inconsciente."
+
+    Walter ("gritando"): "Acorda, Jesse! Acorda!"
+
+    action: "Sirenes ao longe. Luzes vermelhas e azuis aparecem no horizonte."
+
+    Walter: "Deus... O que eu fiz?"
+}
